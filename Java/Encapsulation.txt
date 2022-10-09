@@ -1,0 +1,80 @@
+Example for Encapsulation in Java
+
+
+public class Rectangle{
+
+//member variable
+
+private int lengh;
+private int width;
+
+
+
+// setters
+
+
+public void setLengh(int l){
+   this.lengh = l;
+ }
+
+public void setWidth(int w){
+    this.width = w;
+  }
+
+   // getters
+
+
+public int getLengh(){
+   retuen lengh;
+  }
+
+
+public int getWidth(){
+    return width;
+  }
+
+// cconstructors
+public Rectangle(){
+
+   System.out.println("Rectangle created");
+    lengh = 10;
+    width = 5;
+
+}
+
+public Rectangle(int a, int b ){
+     System.out.println("Rectangle created");
+
+   this.lengh = a;
+    this.width = b;
+}
+
+
+public int calculatePerimeter(){
+	int perimeter;
+	perimeter = 2 * (lengh + width);
+	return perimeter;
+     
+}
+
+public int calculateArea(){
+	return (lengh * width);
+   }
+
+
+}
+
+
+Public class RectangleApp{
+   public static void main (String args[]){
+
+	Recangle r = new Recatngle();
+
+         int peri = r.calculatePerimeter();
+	int area = r. calculateArea();
+
+	System.out.println("Area of the recangle = "+ area); 
+	System.out.println("Perimeter of the recangle = "+ peri); 
+  }
+
+}
